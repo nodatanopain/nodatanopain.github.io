@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bahattin Wilhelm | Data Science &amp; Data Analysis &amp; AI Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            surface: "#0b1120",
+            card: "#111827",
+            accent: "#38bdf8"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface text-slate-200 antialiased selection:bg-sky-500/30 selection:text-sky-200">
+
+  <!-- Top Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-surface/85 backdrop-blur border-b border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#home" class="font-bold text-white tracking-tight text-lg">
+        Bahattin Wilhelm  <span class="text-sky-400 font-normal text-sm hidden sm:inline">| Data &amp; AI</span>
+      </a>
+
+      <!-- Section Links -->
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="#about" class="hover:text-sky-400 transition">About</a>
+        <a href="#skills" class="hover:text-sky-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
+        <a href="#experience" class="hover:text-sky-400 transition">Experience</a>
+        <a href="#education" class="hover:text-sky-400 transition">Education</a>
+        <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+      </nav>
+
+      <!-- Social Links -->
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/nodatanopain" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="p-2 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-200 transition">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/bahattinw" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="p-2 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-200 transition">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="max-w-6xl mx-auto px-6 pt-16 pb-14">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/25 text-sky-300 text-xs font-medium mb-6">
+      <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+      Available for Data Science, Analytics &amp; AI Roles
+    </div>
+
+    <h1 class="text-4xl sm:text-5xl font-bold text-white tracking-tight max-w-3xl">
+      Hi, I'm Bahattin Wilhelm .
+      <span class="block text-sky-400 mt-1">I turn complex data and AI models into practical products.</span>
+    </h1>
+
+    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mt-6 leading-relaxed">
+      Data Scientist and AI enthusiast building end-to-end analytics workflows, machine learning models, and interactive web demos hosted on external platforms.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="#projects" class="px-5 py-2.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-sm transition">
+        View Projects
+      </a>
+      <a href="https://linkedin.com/in/bahattinw" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-medium text-sm border border-slate-700 transition">
+        LinkedIn
+      </a>
+   
+    </div>
+  </section>
+
+  <!-- About & Key Impact -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-800/80">
+    <p class="text-xs uppercase tracking-widest text-sky-400 font-semibold">Introduction</p>
+    <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">About</h2>
+
+    <div class="mt-5 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+      <div class="lg:col-span-2 space-y-4 text-slate-300 leading-relaxed">
+        <p>
+          I focus on moving from raw, messy datasets and open-ended problems to clear analytical findings, reproducible machine learning models, and usable applications.
+        </p>
+        <p>
+          This portfolio acts as a central hub linking to live apps on Streamlit or Hugging Face Spaces, notebooks, and GitHub repositories so reviewers can inspect both methodology and working results.
+        </p>
+      </div>
+
+      <!-- Key Impact Metrics (Rendered directly by JS so values never stay stuck at 0) -->
+      <div id="impact-grid" class="grid grid-cols-2 gap-4"></div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-800/80">
+    <p class="text-xs uppercase tracking-widest text-sky-400 font-semibold">Expertise</p>
+    <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">Skills</h2>
+
+    <div id="skills-grid" class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-800/80">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+      <div>
+        <p class="text-xs uppercase tracking-widest text-sky-400 font-semibold">Work</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">Projects</h2>
+        <p class="text-slate-400 text-sm mt-1">
+          Selected data analysis, machine learning, and AI projects with live app links and source code.
+        </p>
+      </div>
+
+      <!-- Category Filter Buttons -->
+      <div id="project-filters" class="flex flex-wrap gap-2"></div>
+    </div>
+
+    <div id="projects-grid" class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6"></div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-800/80">
+    <p class="text-xs uppercase tracking-widest text-sky-400 font-semibold">Professional Journey</p>
+    <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">Experience</h2>
+
+    <div id="experience-list" class="mt-6 space-y-5"></div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-800/80">
+    <p class="text-xs uppercase tracking-widest text-sky-400 font-semibold">Background</p>
+    <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">Education</h2>
+
+    <div id="education-list" class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5"></div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-14 border-t border-slate-800/80">
+    <div class="rounded-2xl bg-card border border-slate-800 p-8 sm:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+      <div>
+        <p class="text-xs uppercase tracking-widest text-sky-400 font-semibold">Let's Work Together</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">Get in Touch</h2>
+        <p class="text-slate-400 mt-2 max-w-xl">
+          Open to roles, collaborations, and technical discussions in data analytics, data science, and applied AI.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap gap-3">
+        <a href="mailto:bahattinwilhelm@gmail.com" class="px-4 py-2.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-sm inline-flex items-center gap-2 transition">
+          <i class="fas fa-envelope"></i> Email Me
+        </a>
+        <a href="https://linkedin.com/in/bahattinw" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-sm inline-flex items-center gap-2 border border-slate-700 transition">
+          <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+        <a href="https://github.com/nodatanopain" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-sm inline-flex items-center gap-2 border border-slate-700 transition">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="max-w-6xl mx-auto px-6 py-8 border-t border-slate-800/80 text-center sm:flex sm:items-center sm:justify-between text-xs text-slate-500">
+    <p>&copy; <span id="year"></span> Bahattin Wilhelm. All rights reserved.</p>
+    <p class="mt-2 sm:mt-0">Hosted on GitHub Pages</p>
+  </footer>
+
+  <!-- =====================================================================
+       PORTFOLIO DATA & RENDER LOGIC
+       Update the arrays below whenever you add new projects or experience.
+       ===================================================================== -->
+  <script>
+    // 1. Key impact metrics shown next to the About section
+    const IMPACT_STATS = [
+      { value: "4+", label: "End-to-End Projects" },
+ //     { value: "250K+", label: "Records Processed" },
+  //    { value: "3", label: "Live Deployed Apps" },
+  //    { value: "100%", label: "Reproducible Code" }
+    ];
+
+    // 2. Core technical skill groups
+    const SKILL_GROUPS = [
+      {
+        title: "Data Analysis & BI",
+        summary: "Exploratory analysis, KPI tracking, cohort/funnel insights, and clear visual reporting.",
+        tools: ["SQL", "Pandas", "NumPy", "Power BI", "Tableau"]
+      },
+      {
+        title: "Machine Learning",
+        summary: "Feature engineering, supervised classification/regression, validation, and error analysis.",
+        tools: ["Scikit-learn", "XGBoost", "LightGBM", "Cross-Validation"]
+      },
+      {
+        title: "Applied AI & LLM Apps",
+        summary: "Prompt evaluation, embeddings, retrieval workflows, and interactive model interfaces.",
+        tools: ["Python", "Embeddings", "RAG", "Streamlit", "Gradio"]
+      }
+    ];
+
+    // 3. Projects list: add a new object here to publish a new project card
+    const PROJECTS = [
+      {
+        title: "Customer Churn Prediction & Retention App",
+        category: "Data Science",
+        stack: ["Python", "Scikit-learn", "XGBoost", "Streamlit"],
+        problem: "Subscription businesses often lose high-value accounts without early warning signals from usage and billing patterns.",
+        approach: "Cleaned customer records, engineered tenure and engagement features, compared baseline and gradient-boosted models, and built an interactive risk simulator.",
+        outcome: "Achieved 0.88 ROC-AUC on holdout data and enabled interactive what-if risk scoring in a live web app.",
+       // demoUrl: "https://share.streamlit.io/YOUR_USERNAME/YOUR_APP",
+       // repoUrl: "https://github.com/nodatanopain/churn-prediction-app"
+      },
+      {
+        title: "Document Q&A Assistant (RAG Demo)",
+        category: "AI & LLM",
+        stack: ["Python", "Embeddings", "Vector Search", "Gradio"],
+        problem: "Searching across long technical PDFs or notes is slow when answers depend on specific passages and context.",
+        approach: "Chunked source documents, indexed dense embeddings for semantic retrieval, and grounded responses with cited chunks.",
+        outcome: "Published an interactive Hugging Face Space where reviewers can test queries and inspect retrieved context.",
+      //  demoUrl: "https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE",
+      //  repoUrl: "https://github.com/nodatanopain/rag-doc-assistant"
+      },
+      {
+        title: "Sales & Funnel Performance Analysis",
+        category: "Data Analysis",
+        stack: ["SQL", "Python", "Cohort Analysis", "Visualization"],
+        problem: "Raw transaction and conversion logs made it hard to see where drop-offs occurred across customer cohorts.",
+        approach: "Wrote modular SQL queries and Python notebooks to segment cohorts, track conversion stages, and isolate key drivers.",
+        outcome: "Surfaced actionable bottlenecks by segment and documented reproducible analysis steps in a clean repository.",
+     //   demoUrl: "https://colab.research.google.com/",
+     //   repoUrl: "https://github.com/nodatanopain/sales-funnel-analysis"
+      }
+    ];
+
+    // 4. Work experience entries
+    const EXPERIENCES = [
+      {
+        role: "Project Manager, Aircraft Maintenance & Logistics",
+        period: "09/2007 – 07/2018",
+        bullets: [
+          "Held overall responsibility for on-time, high-quality delivery of complex projects in aircraft maintenance, materials management and technical logistics",
+          "Analysed, structured and documented business processes and data flows using SAP MM and MS Office",
+          "Built, maintained and strategically managed relationships with internal and external stakeholders"
+        ]
+      },
+      { role: "DevOps Engineer (Cloud & Data)",
+        period: "11/2022 – 12/2023",
+        bullets: [
+          "Designed and implemented scalable target cloud architectures to optimise the performance of data science applications, reporting and ad-hoc analyses",
+      "Developed 10+ tailored dashboards and data-driven analytical models (using Python and Tableau, among others) to improve decision-making across 5+ business domains", 
+      "Gathered requirements from business departments and translated them into data models, SQL queries and reports", 
+      "Automated data infrastructure through software deployment on OpenShift and built CI/CD pipelines (GitLab CI, Jenkins)"
+        ]
+      },
+    { role: "Platform Engineer (Data & Analytics Platforms)",
+        period: "10/2024 – 09/2025",
+        bullets: [
+    "Built and automated the provisioning of and documented 10+ OpenShift (Kubernetes) environments using ArgoCD (GitOps) and Helm as a scalable foundation for highly available data and analytics platforms",
+"Provisioned and maintained database services and data infrastructure on OpenShift clusters to ensure reliable data flow",
+"Standardised deployments with Helm charts and declarative configuration (Infrastructure as Code), reducing manual effort and configuration errors",
+"Provided technical consulting to multiple cross-functional teams on making the best use of the OpenShift infrastructure and integrating it into existing IT and analytics landscapes",
+"Created technical documentation and operations runbooks for platform operations and monitored the environments with Prometheus and Grafana"
+        ]
+      }    
+    ];
+
+    // 5. Education entries
+    const EDUCATION = [
+      {
+        degree: "Studies in Aircraft Maintenance",
+        institution: "Anadolu University",
+        period: "2003 - 2007"
+      }
+    ];
+
+    // --- Render Functions ---
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.getElementById("impact-grid").innerHTML = IMPACT_STATS.map((item) => `
+      <div class="rounded-xl bg-card border border-slate-800 p-4">
+        <div class="text-2xl sm:text-3xl font-bold text-sky-400">${item.value}</div>
+        <div class="text-xs text-slate-400 mt-1">${item.label}</div>
+      </div>
+    `).join("");
+
+    document.getElementById("skills-grid").innerHTML = SKILL_GROUPS.map((group) => `
+      <div class="rounded-xl bg-card border border-slate-800 p-6 flex flex-col justify-between">
+        <div>
+          <h3 class="text-lg font-semibold text-white">${group.title}</h3>
+          <p class="text-sm text-slate-400 mt-2 leading-relaxed">${group.summary}</p>
+        </div>
+        <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-slate-800/80">
+          ${group.tools.map((tool) => `
+            <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-sky-300 border border-slate-700/70">${tool}</span>
+          `).join("")}
+        </div>
+      </div>
+    `).join("");
+
+    const categories = ["All", ...new Set(PROJECTS.map((p) => p.category))];
+    let activeCategory = "All";
+
+    function renderFilters() {
+      const container = document.getElementById("project-filters");
+      container.innerHTML = categories.map((cat) => {
+        const isActive = cat === activeCategory;
+        const classes = isActive
+          ? "bg-sky-500 text-slate-950 font-semibold"
+          : "bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700";
+        return `
+          <button type="button" onclick="selectCategory('${cat.replace(/'/g, "\\'")}')" class="px-3.5 py-1.5 rounded-lg text-xs transition ${classes}">
+            ${cat}
+          </button>
+        `;
+      }).join("");
+    }
+
+    function renderProjects() {
+      const filtered = activeCategory === "All"
+        ? PROJECTS
+        : PROJECTS.filter((p) => p.category === activeCategory);
+
+      document.getElementById("projects-grid").innerHTML = filtered.map((proj) => `
+        <article class="rounded-2xl bg-card border border-slate-800 hover:border-sky-500/40 p-6 flex flex-col justify-between transition">
+          <div>
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-xs font-semibold uppercase tracking-wider text-sky-400">${proj.category}</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mt-2">${proj.title}</h3>
+
+            <!-- Stack tags -->
+            <div class="flex flex-wrap gap-1.5 mt-3">
+              ${proj.stack.map((tech) => `
+                <span class="text-[11px] px-2 py-0.5 rounded bg-sky-500/10 text-sky-300 border border-sky-500/20">${tech}</span>
+              `).join("")}
+            </div>
+
+            <!-- Problem, Approach, Outcome -->
+            <dl class="mt-4 space-y-2.5 text-sm text-slate-300 leading-relaxed">
+              <div>
+                <dt class="font-semibold text-white inline">Problem: </dt>
+                <dd class="inline text-slate-400">${proj.problem}</dd>
+              </div>
+              <div>
+                <dt class="font-semibold text-white inline">Approach: </dt>
+                <dd class="inline text-slate-400">${proj.approach}</dd>
+              </div>
+              <div>
+                <dt class="font-semibold text-white inline">Outcome: </dt>
+                <dd class="inline text-slate-400">${proj.outcome}</dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- External Live App & Code Links -->
+          <div class="mt-6 pt-4 border-t border-slate-800 flex flex-wrap items-center gap-4 text-sm font-medium">
+            ${proj.demoUrl ? `
+              <a href="${proj.demoUrl}" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 inline-flex items-center gap-1.5">
+                <i class="fas fa-arrow-up-right-from-square text-xs"></i> Live App
+              </a>
+            ` : ""}
+            ${proj.repoUrl ? `
+              <a href="${proj.repoUrl}" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white inline-flex items-center gap-1.5">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            ` : ""}
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function selectCategory(category) {
+      activeCategory = category;
+      renderFilters();
+      renderProjects();
+    }
+
+    document.getElementById("experience-list").innerHTML = EXPERIENCES.map((exp) => `
+      <div class="rounded-xl bg-card border border-slate-800 p-6">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+          <h3 class="text-lg font-semibold text-white">${exp.role}</h3>
+          <span class="text-xs font-medium text-sky-400">${exp.period}</span>
+        </div>
+        <ul class="mt-3 space-y-2 text-sm text-slate-400 list-disc list-inside">
+          ${exp.bullets.map((b) => `<li>${b}</li>`).join("")}
+        </ul>
+      </div>
+    `).join("");
+
+    document.getElementById("education-list").innerHTML = EDUCATION.map((edu) => `
+      <div class="rounded-xl bg-card border border-slate-800 p-6">
+        <h3 class="text-lg font-semibold text-white">${edu.degree}</h3>
+        <p class="text-sm text-slate-300 mt-1">${edu.institution}</p>
+        <p class="text-xs text-sky-400 mt-2">${edu.period}</p>
+      </div>
+    `).join("");
+
+    renderFilters();
+    renderProjects();
+  </script>
+</body>
+</html>
