@@ -59,9 +59,11 @@
     </div>
 
     <h1 class="text-4xl sm:text-5xl font-bold text-white tracking-tight max-w-3xl">
-      Hi, I'm Bahattin Wilhelm .
-      <span class="block text-sky-400 mt-1">I turn complex data and AI models into practical products.</span>
+      Hi, I'm Bahattin Wilhelm.
     </h1>
+    <h2 <span class="block text-sky-400 mt-1">I turn complex data and AI models into practical products.</span>
+    </h2>
+   
 
     <p class="text-slate-400 text-base sm:text-lg max-w-2xl mt-6 leading-relaxed">
       Data Scientist and AI enthusiast building end-to-end analytics workflows, machine learning models, and interactive web demos hosted on external platforms.
@@ -234,30 +236,23 @@
         outcome: "Surfaced actionable bottlenecks by segment and documented reproducible analysis steps in a clean repository.",
      //   demoUrl: "https://colab.research.google.com/",
      //   repoUrl: "https://github.com/nodatanopain/sales-funnel-analysis"
-      }
+      },
+      {
+        title: "Used Car Price Prediction App",
+        category: "Data Science",
+        stack: ["Python", "Scikit-learn", "XGBoost", "Random Forest", "Streamlit"],
+        problem: "Estimating fair market prices for used cars accurately across varying vehicle specifications and market features.",
+        approach: "Preprocessed vehicle datasets, benchmarked linear/regularized models (Linear, Ridge, Lasso, ElasticNet) against Random Forest and XGBoost, and optimized top models using GridSearchCV, cross-validation, and feature importance selection.",
+        outcome: "Selected the highest-performing tuned regression model using key predictive features and deployed an interactive real-time price estimator on Streamlit.",
+        demoUrl: "https://app-cloud-deployment-kvwbzwer6d2tc3qruskuch.streamlit.app,
+        repoUrl: ""
+      },
     ];
 
     // 4. Work experience entries
     const EXPERIENCES = [
-      {
-        role: "Project Manager, Aircraft Maintenance & Logistics",
-        period: "09/2007 – 07/2018",
-        bullets: [
-          "Held overall responsibility for on-time, high-quality delivery of complex projects in aircraft maintenance, materials management and technical logistics",
-          "Analysed, structured and documented business processes and data flows using SAP MM and MS Office",
-          "Built, maintained and strategically managed relationships with internal and external stakeholders"
-        ]
-      },
-      { role: "DevOps Engineer (Cloud & Data)",
-        period: "11/2022 – 12/2023",
-        bullets: [
-          "Designed and implemented scalable target cloud architectures to optimise the performance of data science applications, reporting and ad-hoc analyses",
-      "Developed 10+ tailored dashboards and data-driven analytical models (using Python and Tableau, among others) to improve decision-making across 5+ business domains", 
-      "Gathered requirements from business departments and translated them into data models, SQL queries and reports", 
-      "Automated data infrastructure through software deployment on OpenShift and built CI/CD pipelines (GitLab CI, Jenkins)"
-        ]
-      },
-    { role: "Platform Engineer (Data & Analytics Platforms)",
+      
+            { role: "Platform Engineer (Data & Analytics Platforms)",
         period: "10/2024 – 09/2025",
         bullets: [
     "Built and automated the provisioning of and documented 10+ OpenShift (Kubernetes) environments using ArgoCD (GitOps) and Helm as a scalable foundation for highly available data and analytics platforms",
@@ -266,7 +261,27 @@
 "Provided technical consulting to multiple cross-functional teams on making the best use of the OpenShift infrastructure and integrating it into existing IT and analytics landscapes",
 "Created technical documentation and operations runbooks for platform operations and monitored the environments with Prometheus and Grafana"
         ]
-      }    
+      } , 
+         { role: "DevOps Engineer (Cloud & Data)",
+        period: "11/2022 – 12/2023",
+        bullets: [
+          "Designed and implemented scalable target cloud architectures to optimise the performance of data science applications, reporting and ad-hoc analyses",
+      "Developed 10+ tailored dashboards and data-driven analytical models (using Python and Tableau, among others) to improve decision-making across 5+ business domains", 
+      "Gathered requirements from business departments and translated them into data models, SQL queries and reports", 
+      "Automated data infrastructure through software deployment on OpenShift and built CI/CD pipelines (GitLab CI, Jenkins)"
+        ]
+      },
+      
+      {
+        role: "Project Manager, Aircraft Maintenance & Logistics",
+        period: "02/2009 – 07/2018",
+        bullets: [
+          "Held overall responsibility for on-time, high-quality delivery of complex projects in aircraft maintenance, materials management and technical logistics",
+          "Analysed, structured and documented business processes and data flows using SAP MM and MS Office",
+          "Built, maintained and strategically managed relationships with internal and external stakeholders"
+        ]
+      },   
+    
     ];
 
     // 5. Education entries
