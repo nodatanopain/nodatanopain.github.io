@@ -179,7 +179,7 @@
   <script>
     // 1. Key impact metrics shown next to the About section
     const IMPACT_STATS = [
-      { value: "1+", label: "Live Deployed App" },
+      { value: "2+", label: "Live Deployed App" },
       { value: "10+", label: "OpenShift Environments" },
       { value: "10+", label: "Dashboards & Models" },
       { value: "5+", label: "Business Domains" }
@@ -220,7 +220,17 @@
         outcome: "Selected the highest-performing tuned regression model using key predictive features and deployed an interactive real-time price estimator on Streamlit.",
         demoUrl: "https://app-cloud-deployment-kvwbzwer6d2tc3qruskuch.streamlit.app",
         repoUrl: ""
-      }
+      },
+      {
+        title: "HR Employee Attrition Prediction App",
+        category: "Data Science",
+        stack: ["Python", "Scikit-learn", "XGBoost", "Deepchecks", "Streamlit"],
+        problem: "Identifying employees at risk of leaving the company early based on satisfaction, workload, evaluation scores, tenure, and compensation features.",
+        approach: "Performed EDA and data validation with Deepchecks, deduplicated HR records (14,999 to 11,991 unique rows), and packaged preprocessing with an XGBoost classifier into a unified Scikit-learn pipeline.",
+        outcome: "Deployed an interactive retention prediction web app on Streamlit enabling real-time employee attrition risk scoring.",
+        demoUrl: "https://churnprediction00wilhelm.streamlit.app/",
+        repoUrl: ""
+      },
 
       /* Template for adding future projects:
       {
