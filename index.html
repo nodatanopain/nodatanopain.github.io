@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bahattin Wilhelm | Data Science &amp; Data Analysis &amp; AI Portfolio</title>
+  <title>Bahattin Wilhelm | Data Science, Data Analysis &amp; AI Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <script>
@@ -26,7 +26,7 @@
   <header class="sticky top-0 z-40 bg-surface/85 backdrop-blur border-b border-slate-800/80">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="#home" class="font-bold text-white tracking-tight text-lg">
-        Bahattin Wilhelm  <span class="text-sky-400 font-normal text-sm hidden sm:inline">| Data &amp; AI</span>
+        Bahattin Wilhelm <span class="text-sky-400 font-normal text-sm hidden sm:inline">| Data &amp; AI</span>
       </a>
 
       <!-- Section Links -->
@@ -61,12 +61,12 @@
     <h1 class="text-4xl sm:text-5xl font-bold text-white tracking-tight max-w-3xl">
       Hi, I'm Bahattin Wilhelm.
     </h1>
-    <h2 <span class="block text-sky-400 mt-1">I turn complex data and AI models into practical products.</span>
+    <h2 class="text-xl sm:text-2xl font-semibold text-sky-400 mt-2 max-w-3xl">
+      I turn complex data and AI models into practical products.
     </h2>
-   
 
     <p class="text-slate-400 text-base sm:text-lg max-w-2xl mt-6 leading-relaxed">
-      Data Scientist and AI enthusiast building end-to-end analytics workflows, machine learning models, and interactive web demos hosted on external platforms.
+      Data Scientist and AI enthusiast with a strong platform and cloud engineering background, building end-to-end analytics workflows, machine learning models, and interactive web demos hosted on external platforms.
     </p>
 
     <div class="mt-8 flex flex-wrap gap-3">
@@ -76,7 +76,6 @@
       <a href="https://linkedin.com/in/bahattinw" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-medium text-sm border border-slate-700 transition">
         LinkedIn
       </a>
-   
     </div>
   </section>
 
@@ -105,7 +104,7 @@
     <p class="text-xs uppercase tracking-widest text-sky-400 font-semibold">Expertise</p>
     <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">Skills</h2>
 
-    <div id="skills-grid" class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+    <div id="skills-grid" class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5"></div>
   </section>
 
   <!-- Projects Section -->
@@ -180,108 +179,95 @@
   <script>
     // 1. Key impact metrics shown next to the About section
     const IMPACT_STATS = [
-      { value: "4+", label: "End-to-End Projects" },
- //     { value: "250K+", label: "Records Processed" },
-  //    { value: "3", label: "Live Deployed Apps" },
-  //    { value: "100%", label: "Reproducible Code" }
+      { value: "1+", label: "Live Deployed App" },
+      { value: "10+", label: "OpenShift Environments" },
+      { value: "10+", label: "Dashboards & Models" },
+      { value: "5+", label: "Business Domains" }
     ];
 
     // 2. Core technical skill groups
     const SKILL_GROUPS = [
       {
         title: "Data Analysis & BI",
-        summary: "Exploratory analysis, KPI tracking, cohort/funnel insights, and clear visual reporting.",
-        tools: ["SQL", "Pandas", "NumPy", "Power BI", "Tableau"]
+        summary: "Exploratory analysis, KPI tracking, business requirement translation, and clear visual reporting.",
+        tools: ["SQL", "Python", "Pandas", "NumPy", "Tableau"]
       },
       {
         title: "Machine Learning",
-        summary: "Feature engineering, supervised classification/regression, validation, and error analysis.",
-        tools: ["Scikit-learn", "XGBoost", "LightGBM", "Cross-Validation"]
+        summary: "Feature engineering, regression and classification models, cross-validation, and hyperparameter tuning.",
+        tools: ["Scikit-learn", "XGBoost", "Random Forest", "GridSearchCV"]
       },
       {
-        title: "Applied AI & LLM Apps",
-        summary: "Prompt evaluation, embeddings, retrieval workflows, and interactive model interfaces.",
-        tools: ["Python", "Embeddings", "RAG", "Streamlit", "Gradio"]
+        title: "Applied AI & Interactive Apps",
+        summary: "Building accessible web interfaces to test and showcase ML and AI workflows.",
+        tools: ["Streamlit", "Gradio", "Python", "Embeddings", "RAG"]
+      },
+      {
+        title: "Cloud, Containers & DevOps",
+        summary: "Automated provisioning, GitOps delivery, CI/CD pipelines, and platform observability.",
+        tools: ["OpenShift", "Kubernetes", "ArgoCD", "Helm", "GitLab CI", "Jenkins", "Prometheus", "Grafana"]
       }
     ];
 
     // 3. Projects list: add a new object here to publish a new project card
     const PROJECTS = [
       {
-        title: "Customer Churn Prediction & Retention App",
-        category: "Data Science",
-        stack: ["Python", "Scikit-learn", "XGBoost", "Streamlit"],
-        problem: "Subscription businesses often lose high-value accounts without early warning signals from usage and billing patterns.",
-        approach: "Cleaned customer records, engineered tenure and engagement features, compared baseline and gradient-boosted models, and built an interactive risk simulator.",
-        outcome: "Achieved 0.88 ROC-AUC on holdout data and enabled interactive what-if risk scoring in a live web app.",
-       // demoUrl: "https://share.streamlit.io/YOUR_USERNAME/YOUR_APP",
-       // repoUrl: "https://github.com/nodatanopain/churn-prediction-app"
-      },
-      {
-        title: "Document Q&A Assistant (RAG Demo)",
-        category: "AI & LLM",
-        stack: ["Python", "Embeddings", "Vector Search", "Gradio"],
-        problem: "Searching across long technical PDFs or notes is slow when answers depend on specific passages and context.",
-        approach: "Chunked source documents, indexed dense embeddings for semantic retrieval, and grounded responses with cited chunks.",
-        outcome: "Published an interactive Hugging Face Space where reviewers can test queries and inspect retrieved context.",
-      //  demoUrl: "https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE",
-      //  repoUrl: "https://github.com/nodatanopain/rag-doc-assistant"
-      },
-      {
-        title: "Sales & Funnel Performance Analysis",
-        category: "Data Analysis",
-        stack: ["SQL", "Python", "Cohort Analysis", "Visualization"],
-        problem: "Raw transaction and conversion logs made it hard to see where drop-offs occurred across customer cohorts.",
-        approach: "Wrote modular SQL queries and Python notebooks to segment cohorts, track conversion stages, and isolate key drivers.",
-        outcome: "Surfaced actionable bottlenecks by segment and documented reproducible analysis steps in a clean repository.",
-     //   demoUrl: "https://colab.research.google.com/",
-     //   repoUrl: "https://github.com/nodatanopain/sales-funnel-analysis"
-      },
-      {
         title: "Used Car Price Prediction App",
         category: "Data Science",
         stack: ["Python", "Scikit-learn", "XGBoost", "Random Forest", "Streamlit"],
         problem: "Estimating fair market prices for used cars accurately across varying vehicle specifications and market features.",
-        approach: "Preprocessed vehicle datasets, benchmarked linear/regularized models (Linear, Ridge, Lasso, ElasticNet) against Random Forest and XGBoost, and optimized top models using GridSearchCV, cross-validation, and feature importance selection.",
+        approach: "Preprocessed vehicle datasets, benchmarked linear and regularized models (Linear, Ridge, Lasso, ElasticNet) against Random Forest and XGBoost, and optimized top models using GridSearchCV, cross-validation, and feature importance selection.",
         outcome: "Selected the highest-performing tuned regression model using key predictive features and deployed an interactive real-time price estimator on Streamlit.",
-        demoUrl: "https://app-cloud-deployment-kvwbzwer6d2tc3qruskuch.streamlit.app,
+        demoUrl: "https://app-cloud-deployment-kvwbzwer6d2tc3qruskuch.streamlit.app",
         repoUrl: ""
-      },
+      }
+
+      /* Template for adding future projects:
+      {
+        title: "Project Title",
+        category: "AI & LLM",
+        stack: ["Python", "Streamlit"],
+        problem: "Describe the core problem.",
+        approach: "Describe data preparation, modeling, or AI architecture.",
+        outcome: "Describe measurable results or deployment.",
+        demoUrl: "https://your-live-app-url",
+        repoUrl: "https://github.com/nodatanopain/your-repo"
+      }
+      */
     ];
 
     // 4. Work experience entries
     const EXPERIENCES = [
-      
-            { role: "Platform Engineer (Data & Analytics Platforms)",
+      {
+        role: "Platform Engineer (Data & Analytics Platforms)",
         period: "10/2024 – 09/2025",
         bullets: [
-    "Built and automated the provisioning of and documented 10+ OpenShift (Kubernetes) environments using ArgoCD (GitOps) and Helm as a scalable foundation for highly available data and analytics platforms",
-"Provisioned and maintained database services and data infrastructure on OpenShift clusters to ensure reliable data flow",
-"Standardised deployments with Helm charts and declarative configuration (Infrastructure as Code), reducing manual effort and configuration errors",
-"Provided technical consulting to multiple cross-functional teams on making the best use of the OpenShift infrastructure and integrating it into existing IT and analytics landscapes",
-"Created technical documentation and operations runbooks for platform operations and monitored the environments with Prometheus and Grafana"
-        ]
-      } , 
-         { role: "DevOps Engineer (Cloud & Data)",
-        period: "11/2022 – 12/2023",
-        bullets: [
-          "Designed and implemented scalable target cloud architectures to optimise the performance of data science applications, reporting and ad-hoc analyses",
-      "Developed 10+ tailored dashboards and data-driven analytical models (using Python and Tableau, among others) to improve decision-making across 5+ business domains", 
-      "Gathered requirements from business departments and translated them into data models, SQL queries and reports", 
-      "Automated data infrastructure through software deployment on OpenShift and built CI/CD pipelines (GitLab CI, Jenkins)"
+          "Built, automated the provisioning of, and documented 10+ OpenShift (Kubernetes) environments using ArgoCD (GitOps) and Helm as a scalable foundation for highly available data and analytics platforms.",
+          "Provisioned and maintained database services and data infrastructure on OpenShift clusters to ensure reliable data flow.",
+          "Standardised deployments with Helm charts and declarative configuration (Infrastructure as Code), reducing manual effort and configuration errors.",
+          "Provided technical consulting to multiple cross-functional teams on making the best use of the OpenShift infrastructure and integrating it into existing IT and analytics landscapes.",
+          "Created technical documentation and operations runbooks for platform operations and monitored the environments with Prometheus and Grafana."
         ]
       },
-      
+      {
+        role: "DevOps Engineer (Cloud & Data)",
+        period: "11/2022 – 12/2023",
+        bullets: [
+          "Designed and implemented scalable target cloud architectures to optimise the performance of data science applications, reporting, and ad-hoc analyses.",
+          "Developed 10+ tailored dashboards and data-driven analytical models (using Python and Tableau, among others) to improve decision-making across 5+ business domains.",
+          "Gathered requirements from business departments and translated them into data models, SQL queries, and reports.",
+          "Automated data infrastructure through software deployment on OpenShift and built CI/CD pipelines (GitLab CI, Jenkins)."
+        ]
+      },
       {
         role: "Project Manager, Aircraft Maintenance & Logistics",
         period: "02/2009 – 07/2018",
         bullets: [
-          "Held overall responsibility for on-time, high-quality delivery of complex projects in aircraft maintenance, materials management and technical logistics",
-          "Analysed, structured and documented business processes and data flows using SAP MM and MS Office",
-          "Built, maintained and strategically managed relationships with internal and external stakeholders"
+          "Held overall responsibility for on-time, high-quality delivery of complex projects in aircraft maintenance, materials management, and technical logistics.",
+          "Analysed, structured, and documented business processes and data flows using SAP MM and MS Office.",
+          "Built, maintained, and strategically managed relationships with internal and external stakeholders."
         ]
-      },   
-    
+      }
     ];
 
     // 5. Education entries
