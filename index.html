@@ -210,7 +210,16 @@
     ];
 
     // 3. Projects list: add a new object here to publish a new project card
-    const PROJECTS = [
+    const PROJECTS = [{
+        title: "Credit Card Fraud Detection & Risk Scoring App",
+        category: "Data Science",
+        stack: ["Python", "Scikit-learn", "Imbalanced-learn", "SMOTE", "Deepchecks", "Streamlit"],
+        problem: "Detecting fraudulent transactions accurately under severe class imbalance while ensuring predicted probabilities reflect true real-world risk.",
+        approach: "Validated data integrity and train-test splits with Deepchecks, benchmarked unsupervised anomaly detectors (Isolation Forest, LOF, K-Means) against a leak-free ImbPipeline (StandardScaler + SMOTE + Random Forest), and calibrated output probabilities using Platt scaling.",
+        outcome: "Deployed an interactive Streamlit simulator supporting transaction feature inputs (Time, Amount, V1–V28) and real-time calibrated fraud probability scoring.",
+        demoUrl: "https://frauddetection-wilhelm.streamlit.app/",
+        repoUrl: ""
+      },
       {
         title: "Used Car Price Prediction App",
         category: "Data Science",
